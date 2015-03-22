@@ -174,7 +174,7 @@
       <FilesToCopy Include="$(OutputPath)\*.vsix" />
     </ItemGroup>
     <PropertyGroup>
-      <VsixOut>$(MsBuildProjectDirectory)\..\Results</VsixOut>
+      <VsixOut>$(MsBuildProjectDirectory)\..\artifacts</VsixOut>
     </PropertyGroup>
     <Error Text="$(VsSdkTargets) could not be found. A VSIX cannot be built." Condition="!Exists($(VsSdkTargets))" />
     <MakeDir Directories="$(VsixOut)" Condition=" !Exists('$(VsixOut)') " />
